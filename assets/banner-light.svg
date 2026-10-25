@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="title">
-  <title id="title">courage-w: student learning web development. A bench beside a pond at sunset.</title>
+  <title id="title">courage-w. A bench beside a pond at sunset.</title>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#f4f5ef"/>
@@ -67,9 +67,7 @@
   </g>
 
   <!-- Words -->
-  <text class="hello" x="64" y="108">Hi, I'm</text>
-  <text class="title" x="60" y="182">courage-w</text>
-  <line class="rule" x1="66" y1="208" x2="134" y2="208"/>
-  <text class="sub" x="64" y="250">Student learning web development</text>
-  <text class="sub" x="64" y="284">by building things I'd actually use.</text>
+  <text class="title" x="60" y="172">courage-w</text>
+  <line class="rule" x1="66" y1="200" x2="134" y2="200"/>
+  <text class="sub" x="64" y="244">Web development</text>
 </svg>
