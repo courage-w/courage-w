@@ -1,24 +1,42 @@
-## Hi, I'm courage-w 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Hi, I'm courage-w. Student learning web development by building things I'd actually use." src="assets/banner-light.svg" width="100%">
+</picture>
 
-I'm a student learning web development by building things I'd actually want to use.
+<p align="center">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-1f2b26?style=for-the-badge&logo=nextdotjs&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-2b6169?style=for-the-badge&logo=typescript&logoColor=white">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-2b6169?style=for-the-badge&logo=tailwindcss&logoColor=white">
+  <img alt="Leaflet" src="https://img.shields.io/badge/Leaflet-4f6b3a?style=for-the-badge&logo=leaflet&logoColor=white">
+  <img alt="Playwright" src="https://img.shields.io/badge/Playwright-4f6b3a?style=for-the-badge&logo=playwright&logoColor=white">
+  <img alt="Vitest" src="https://img.shields.io/badge/Vitest-4f6b3a?style=for-the-badge&logo=vitest&logoColor=white">
+</p>
 
-### What I'm building
+## 🪑 Featured project: [FishHawk Benches](https://github.com/courage-w/fishhawk-benches)
 
-**[FishHawk Benches](https://github.com/courage-w/fishhawk-benches)**: a calm field guide to public benches.
-Every bench has the view from the seat, a panorama you can swipe around, honest pros and cons,
-sunrise and sunset notes, and a spot on the map.
+A calm field guide to public benches. Every bench gets the view from the seat, a panorama you
+can swipe around, honest pros and cons, sunrise and sunset notes, and a pin on the map.
 
-<a href="https://github.com/courage-w/fishhawk-benches">
-  <img src="https://raw.githubusercontent.com/courage-w/fishhawk-benches/main/docs/screenshots/home.jpg" alt="FishHawk Benches home page: a pond panorama with two lines framing the view from the bench" width="720">
-</a>
+<table>
+  <tr>
+    <td width="60%"><a href="https://github.com/courage-w/fishhawk-benches"><img alt="Home page with a pond panorama and two lines framing the view from the bench" src="https://raw.githubusercontent.com/courage-w/fishhawk-benches/main/docs/screenshots/home.jpg"></a></td>
+    <td width="40%"><a href="https://github.com/courage-w/fishhawk-benches"><img alt="A bench page on a phone" src="https://raw.githubusercontent.com/courage-w/fishhawk-benches/main/docs/screenshots/mobile.jpg"></a></td>
+  </tr>
+</table>
 
-Some things I figured out along the way:
+**Some things I figured out building it**
 
-- Grouping phone photos into benches automatically from their GPS and timestamps
-- Finding where the "view from the seat" photo sits inside a panorama by matching the images
-- Working out when the sun rises or sets in front of a bench from its compass heading
-- Stripping location data from photos before they go online
+| | |
+|---|---|
+| 📍 **Photos sort themselves** | Phone photos get grouped into benches from their GPS and timestamps. |
+| 🔭 **Finds the seat view** | Image matching finds where the "view from the seat" photo sits inside each panorama, so the page can frame it with two lines. |
+| 🌅 **Sunset math** | The compass heading plus the sun's path through the year gives notes like *"Sets in front of you, April to August."* |
+| 🔒 **Privacy first** | Location data is stripped from every photo before it goes online. No cookies, no tracking. |
+| ✅ **Tested** | Unit tests, browser tests on desktop and phone sizes, automated accessibility checks. |
 
-### What I'm learning
+## 🌱 Right now
 
-Next.js · TypeScript · Tailwind CSS · Leaflet maps · testing with Vitest and Playwright · accessibility
+- Learning how to ship a real site: hosting, domains, and a working contact form
+- Walking around finding more benches to add
+
+<p align="center"><sub>Thanks for stopping by. Grab a seat.</sub></p>

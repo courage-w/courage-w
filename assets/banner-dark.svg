@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="title">
+  <title id="title">courage-w: student learning web development. A bench beside a pond at sunset.</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#142326"/>
+      <stop offset="1" stop-color="#1c3236"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5a4a3a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5a4a3a" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="pondClip"><ellipse cx="960" cy="266" rx="190" ry="30"/></clipPath>
+    <style>
+      .title { font: 400 76px Georgia, "Times New Roman", serif; letter-spacing: -1.5px; fill: #e5ebe5; }
+      .hello { font: italic 400 26px Georgia, "Times New Roman", serif; fill: #aebcb5; }
+      .sub { font: 400 24px Georgia, "Times New Roman", serif; fill: #aebcb5; }
+      .rule { stroke: #8fc6cc; stroke-width: 3; stroke-linecap: round; }
+      .ripple { fill: none; stroke: #8fc6cc; stroke-width: 2; stroke-linecap: round; opacity: 0.55; animation: drift 9s ease-in-out infinite alternate; }
+      .ripple.b { animation-duration: 12s; animation-delay: -4s; opacity: 0.4; }
+      .ripple.c { animation-duration: 15s; animation-delay: -7s; opacity: 0.35; }
+      .glow { animation: breathe 8s ease-in-out infinite alternate; transform-origin: 1010px 198px; }
+      .moss { animation: sway 7s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: top center; }
+      @keyframes drift { from { transform: translateX(-18px); } to { transform: translateX(18px); } }
+      @keyframes breathe { from { opacity: 0.65; transform: scale(0.96); } to { opacity: 1; transform: scale(1.04); } }
+      @keyframes sway { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+      @media (prefers-reduced-motion: reduce) { .ripple, .glow, .moss { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#sky)"/>
+
+  <!-- Sun low over the far shore -->
+  <circle class="glow" cx="1010" cy="198" r="120" fill="url(#glow)"/>
+  <circle cx="1010" cy="198" r="34" fill="#e8a96a"/>
+
+  <!-- Far tree line and grassy rise -->
+  <path d="M470 320 C 520 270, 560 236, 620 226 C 680 214, 740 222, 800 210 C 850 200, 900 214, 950 204 C 1010 192, 1070 208, 1120 198 C 1160 192, 1185 200, 1200 198 L 1200 320 Z" fill="#2d4c45"/>
+  <path d="M440 320 C 500 284, 580 256, 700 250 C 820 244, 1000 242, 1200 240 L 1200 320 Z" fill="#24403f"/>
+
+  <!-- Pond with drifting ripples and the sun's reflection -->
+  <ellipse cx="960" cy="266" rx="190" ry="30" fill="#0f2a2f"/>
+  <g clip-path="url(#pondClip)">
+    <rect x="985" y="236" width="50" height="60" fill="#e8a96a" opacity="0.28"/>
+    <path class="ripple" d="M800 258 h70 M910 256 h90 M1050 260 h50"/>
+    <path class="ripple b" d="M820 270 h80 M950 272 h60 M1060 270 h60"/>
+    <path class="ripple c" d="M860 282 h60 M960 284 h100"/>
+  </g>
+
+  <!-- Live oak with Spanish moss -->
+  <path d="M640 290 C 642 250, 636 222, 626 196" stroke="#5f7f4a" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M628 206 C 600 190, 584 188, 566 192 M630 214 C 660 196, 680 194, 700 198" stroke="#5f7f4a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse cx="628" cy="170" rx="92" ry="44" fill="#5f7f4a"/>
+  <ellipse cx="572" cy="186" rx="48" ry="26" fill="#5f7f4a"/>
+  <ellipse cx="694" cy="184" rx="54" ry="28" fill="#5f7f4a"/>
+  <g stroke="#7f938a" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.85">
+    <path class="moss" d="M560 196 v22 M566 198 v30 M582 204 v18"/>
+    <path class="moss" d="M680 204 v26 M690 206 v18 M706 206 v24"/>
+    <path class="moss" d="M612 206 v20 M650 208 v16"/>
+  </g>
+
+  <!-- The bench, facing the water -->
+  <g stroke="#e5ebe5" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M688 280 h86"/>
+    <path d="M692 266 h78 M692 256 h78"/>
+    <path d="M696 280 v18 M766 280 v18"/>
+    <path d="M696 256 v24 M766 256 v24"/>
+  </g>
+
+  <!-- Words -->
+  <text class="hello" x="64" y="108">Hi, I'm</text>
+  <text class="title" x="60" y="182">courage-w</text>
+  <line class="rule" x1="66" y1="208" x2="134" y2="208"/>
+  <text class="sub" x="64" y="250">Student learning web development</text>
+  <text class="sub" x="64" y="284">by building things I'd actually use.</text>
+</svg>
